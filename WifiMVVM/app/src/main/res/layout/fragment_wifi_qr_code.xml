@@ -1,0 +1,47 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?android:attr/windowBackground"
+        android:clickable="true">
+
+        <ImageView
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="50dp"
+            android:id="@+id/qrCodeImageView"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:contentDescription="QR Code Image"
+            android:scaleType="fitCenter" />
+
+        <TextView
+            app:layout_constraintTop_toBottomOf="@+id/qrCodeImageView"
+            android:id="@+id/wifissid"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="ssid"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            app:layout_constraintTop_toBottomOf="@+id/wifissid"
+            android:id="@+id/wifipwd"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="pwd"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

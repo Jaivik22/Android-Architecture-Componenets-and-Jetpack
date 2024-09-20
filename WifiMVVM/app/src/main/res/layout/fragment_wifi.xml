@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <FrameLayout
+        android:id="@+id/fragment_wifi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fragments.WifiFragment"
+        android:background="?android:attr/windowBackground"
+        android:clickable="true">
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/pullToRefresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvAvailableWifi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    </FrameLayout>
+</layout>
